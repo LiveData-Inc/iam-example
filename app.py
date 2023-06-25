@@ -19,11 +19,11 @@ NagSuppressions.add_stack_suppressions(
     stack, [
         dict(
             id='AwsSolutions-IAM4',
-            reason='TODO: replace managed policies'
+            reason='ISSUE: CDK uses an AWS Managed Policy'
         ),
         dict(
             id='HIPAA.Security-IAMNoInlinePolicy',
-            reason='TODO: replace'
+            reason='ISSUE: CDK `iam.PolicyStatement()` built an inline policy'
         ),
     ]
 )

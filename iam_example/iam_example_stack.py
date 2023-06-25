@@ -40,11 +40,11 @@ class IamExampleStack(Stack):
             handler, [
                 dict(
                     id='HIPAA.Security-LambdaDLQ',
-                    reason='suppressing for this demo'
+                    reason='NOT AN ISSUE: suppressing for this demo'
                 ),
                 dict(
                     id='HIPAA.Security-LambdaInsideVPC',
-                    reason='suppressing for this demo'
-                )
+                    reason='NOT AN ISSUE: suppressing for this demo'
+                ),
             ]
         )
