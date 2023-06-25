@@ -17,14 +17,16 @@ cdk.Aspects.of(app).add(HIPAASecurityChecks())
 
 NagSuppressions.add_stack_suppressions(
     stack, [
-        dict(
-            id='AwsSolutions-IAM4',
-            reason='ISSUE: CDK uses an AWS Managed Policy'
-        ),
-        dict(
-            id='HIPAA.Security-IAMNoInlinePolicy',
-            reason='ISSUE: CDK `iam.PolicyStatement()` built an inline policy'
-        ),
+        # uncomment to suppress 'AwsSolutions-IAM4' violation
+        # dict(
+        #     id='AwsSolutions-IAM4',
+        #     reason='ISSUE: CDK uses an AWS Managed Policy'
+        # ),
+        # uncomment to suppress 'HIPAA.Security-IAMNoInlinePolicy' violation
+        # dict(
+        #     id='HIPAA.Security-IAMNoInlinePolicy',
+        #     reason='ISSUE: CDK `iam.PolicyStatement()` built an inline policy'
+        # ),
     ]
 )
 
