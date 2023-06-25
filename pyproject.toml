@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "iam-example"
+version = "0.1.0"
+description = "HIPAA.Security-IAMNoInlinePolicy example"
+authors = ["Jeff Robbins <79278744+jrobbins-livedata@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "iam_example"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aws-cdk-lib = "*"
+constructs = "*"
+
+[tool.poetry.dev-dependencies]
+cdk-nag = "*"
+pytest = "*"
+pytest-cov = "*"
+
+[tool.pytest.ini_options]
+addopts = ["--cov=iam_example", "--cov=lambda_src"]
+testpaths = ["tests/unit"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
