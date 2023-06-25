@@ -22,10 +22,6 @@ NagSuppressions.add_stack_suppressions(
             reason='TODO: replace managed policies'
         ),
         dict(
-            id='AwsSolutions-IAM5',
-            reason='TODO: provide evidence for wildcard permissions'
-        ),
-        dict(
             id='HIPAA.Security-IAMNoInlinePolicy',
             reason='TODO: replace'
         ),
