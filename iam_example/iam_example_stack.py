@@ -9,7 +9,7 @@ class IamExampleStack(Stack):
     def __init__(self, scope: Construct, construct_id: str, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
 
-        managed_policy = iam.ManagedPolicy(
+        lambda_policy = iam.ManagedPolicy(
             self, 'LambdaManagedPolicy',
             description='Allow Lambda access to Log and Event',
             statements=[
@@ -24,19 +24,21 @@ class IamExampleStack(Stack):
         lambda_role = iam.Role(
             self, 'LambdaRole',
             assumed_by=iam.ServicePrincipal('lambda.amazonaws.com'),
-            managed_policies=[managed_policy]
+            managed_policies=[lambda_policy]
         )
+
         handler = lambda_.Function(
-            self, "TestFunction",
+            self, 'TestFunction',
             runtime=lambda_.Runtime.PYTHON_3_10,
-            handler="hello.handler",
-            code=lambda_.Code.from_asset("lambda_src"),
+            handler='hello.handler',
+            code=lambda_.Code.from_asset('lambda_src'),
             reserved_concurrent_executions=10,  # HIPAA.Security-LambdaConcurrency
             role=lambda_role
         )
-        managed_policy.add_statements(
+
+        lambda_policy.add_statements(
             iam.PolicyStatement(
-                sid='IamExampleLogAccess',
+                sid='IamExampleLambdaLogAccess',
                 effect=iam.Effect.ALLOW,
                 actions=['logs:CreateLogGroup', 'logs:CreateLogStream', 'logs:PutLogEvents'],
                 resources=[handler.log_group.log_group_arn],
