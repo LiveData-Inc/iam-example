@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "iam-example"
-version = "0.1.0"
+version = "0.1.1"
 description = "HIPAA.Security-IAMNoInlinePolicy example"
 authors = ["Jeff Robbins <79278744+jrobbins-livedata@users.noreply.github.com>"]
 readme = "README.md"

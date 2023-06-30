@@ -20,13 +20,13 @@ tests-no-zope = ["cloudpickle", "hypothesis", "mypy (>=1.1.1)", "pympler", "pyte
 
 [[package]]
 name = "aws-cdk-asset-awscli-v1"
-version = "2.2.198"
+version = "2.2.199"
 description = "A library that contains the AWS CLI for use in Lambda Layers"
 optional = false
 python-versions = "~=3.7"
 files = [
-    {file = "aws-cdk.asset-awscli-v1-2.2.198.tar.gz", hash = "sha256:6a78b63439a2041fea59c73bb751b87b3415d4451e41a61a852b71ad99fa0e6b"},
-    {file = "aws_cdk.asset_awscli_v1-2.2.198-py3-none-any.whl", hash = "sha256:14a1e917a69e59ddbe559f35cf611b2a7421e42c3544cc7a5ab224387d41f3ab"},
+    {file = "aws-cdk.asset-awscli-v1-2.2.199.tar.gz", hash = "sha256:d2da639d36c739452734ef00858e56cdf6bc4638087ee58e208e3c7fce73fcd3"},
+    {file = "aws_cdk.asset_awscli_v1-2.2.199-py3-none-any.whl", hash = "sha256:dc1799314b36dddbe5800a5a9db08e7741544936632718511303d2eb21d117a4"},
 ]
 
 [package.dependencies]
@@ -68,13 +68,13 @@ typeguard = ">=2.13.3,<2.14.0"
 
 [[package]]
 name = "aws-cdk-lib"
-version = "2.85.0"
+version = "2.86.0"
 description = "Version 2 of the AWS Cloud Development Kit library"
 optional = false
 python-versions = "~=3.7"
 files = [
-    {file = "aws-cdk-lib-2.85.0.tar.gz", hash = "sha256:cbd13ec361a841077db0a0acb1d84c44c030ff198ad0a8e6d47760b3f8362ed4"},
-    {file = "aws_cdk_lib-2.85.0-py3-none-any.whl", hash = "sha256:b5b388c0478b39820d8facee6ed7b07a1e1e1e7c01dded3d17f86797fb8dddb3"},
+    {file = "aws-cdk-lib-2.86.0.tar.gz", hash = "sha256:bd8b0c4c531aadc7b49dcb504e77fc97768e7df8d3b4c97dd084c1c980ba6fef"},
+    {file = "aws_cdk_lib-2.86.0-py3-none-any.whl", hash = "sha256:d9c3c2857190695ea7b2ed4655ea3879774aa54e8513d3d799aa3d149fe04879"},
 ]
 
 [package.dependencies]
@@ -113,13 +113,13 @@ ujson = ["ujson (>=5.4.0,<6.0.0)"]
 
 [[package]]
 name = "cdk-nag"
-version = "2.27.50"
+version = "2.27.55"
 description = "Check CDK v2 applications for best practices using a combination on available rule packs."
 optional = false
 python-versions = "~=3.7"
 files = [
-    {file = "cdk-nag-2.27.50.tar.gz", hash = "sha256:b48a3235832a8f15967806bd447e943e14c1b47bf6ecdd389db5a60954c9b3cc"},
-    {file = "cdk_nag-2.27.50-py3-none-any.whl", hash = "sha256:74e287be7982f5487c064028e8da012c73f8c8d39098388ff830946119b221cb"},
+    {file = "cdk-nag-2.27.55.tar.gz", hash = "sha256:4d09b39dbc963850a677e26bdf95a301a52233be13778fa3c08e4f39ea405028"},
+    {file = "cdk_nag-2.27.55-py3-none-any.whl", hash = "sha256:1c52c679381bad7651eddc28835cce12bbab77b45c65ff0b04abe5e19640b17b"},
 ]
 
 [package.dependencies]
@@ -142,13 +142,13 @@ files = [
 
 [[package]]
 name = "constructs"
-version = "10.2.59"
+version = "10.2.64"
 description = "A programming model for software-defined state"
 optional = false
 python-versions = "~=3.7"
 files = [
-    {file = "constructs-10.2.59-py3-none-any.whl", hash = "sha256:4a311f81c4cc4f5f7f548677825e006faf1563a1bb96f66ee33748815c350ccd"},
-    {file = "constructs-10.2.59.tar.gz", hash = "sha256:fba2da8f98fc0838cfc5bbcf29e4cec1abf9fdab7e797c8d1dc297dc91f3f0fe"},
+    {file = "constructs-10.2.64-py3-none-any.whl", hash = "sha256:9b042f865323375b4c83683b7ffc9d92cc5bf846b985dbe611d2992bfcf80108"},
+    {file = "constructs-10.2.64.tar.gz", hash = "sha256:e9076dcf1661329ced384b14313b4f86370c0ba3d658cd39b2472833f02974ff"},
 ]
 
 [package.dependencies]
@@ -424,13 +424,13 @@ test = ["mypy", "pytest", "typing-extensions"]
 
 [[package]]
 name = "typing-extensions"
-version = "4.6.3"
+version = "4.7.0"
 description = "Backported and Experimental Type Hints for Python 3.7+"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "typing_extensions-4.6.3-py3-none-any.whl", hash = "sha256:88a4153d8505aabbb4e13aacb7c486c2b4a33ca3b3f807914a9b4c844c471c26"},
-    {file = "typing_extensions-4.6.3.tar.gz", hash = "sha256:d91d5919357fe7f681a9f2b5b4cb2a5f1ef0a1e9f59c4d8ff0d3491e05c0ffd5"},
+    {file = "typing_extensions-4.7.0-py3-none-any.whl", hash = "sha256:5d8c9dac95c27d20df12fb1d97b9793ab8b2af8a3a525e68c80e21060c161771"},
+    {file = "typing_extensions-4.7.0.tar.gz", hash = "sha256:935ccf31549830cda708b42289d44b6f74084d616a00be651601a4f968e77c82"},
 ]
 
 [[package]]
