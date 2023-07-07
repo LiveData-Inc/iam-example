@@ -20,13 +20,13 @@ tests-no-zope = ["cloudpickle", "hypothesis", "mypy (>=1.1.1)", "pympler", "pyte
 
 [[package]]
 name = "aws-cdk-asset-awscli-v1"
-version = "2.2.199"
+version = "2.2.200"
 description = "A library that contains the AWS CLI for use in Lambda Layers"
 optional = false
 python-versions = "~=3.7"
 files = [
-    {file = "aws-cdk.asset-awscli-v1-2.2.199.tar.gz", hash = "sha256:d2da639d36c739452734ef00858e56cdf6bc4638087ee58e208e3c7fce73fcd3"},
-    {file = "aws_cdk.asset_awscli_v1-2.2.199-py3-none-any.whl", hash = "sha256:dc1799314b36dddbe5800a5a9db08e7741544936632718511303d2eb21d117a4"},
+    {file = "aws-cdk.asset-awscli-v1-2.2.200.tar.gz", hash = "sha256:af4d67ef7aa4183073e63be5f88d1ce1912b24d2ebac35148e84678d674bdfcd"},
+    {file = "aws_cdk.asset_awscli_v1-2.2.200-py3-none-any.whl", hash = "sha256:ed1b881402b255daec151e386581a627ce13f4d5cb94b7184e6efc38d27584b0"},
 ]
 
 [package.dependencies]
@@ -68,13 +68,13 @@ typeguard = ">=2.13.3,<2.14.0"
 
 [[package]]
 name = "aws-cdk-lib"
-version = "2.86.0"
+version = "2.87.0"
 description = "Version 2 of the AWS Cloud Development Kit library"
 optional = false
 python-versions = "~=3.7"
 files = [
-    {file = "aws-cdk-lib-2.86.0.tar.gz", hash = "sha256:bd8b0c4c531aadc7b49dcb504e77fc97768e7df8d3b4c97dd084c1c980ba6fef"},
-    {file = "aws_cdk_lib-2.86.0-py3-none-any.whl", hash = "sha256:d9c3c2857190695ea7b2ed4655ea3879774aa54e8513d3d799aa3d149fe04879"},
+    {file = "aws-cdk-lib-2.87.0.tar.gz", hash = "sha256:28092098ebd8e4674cf9ffc6bd6a150645e89f3ddb932908180e04e939bbf2de"},
+    {file = "aws_cdk_lib-2.87.0-py3-none-any.whl", hash = "sha256:3c296461871421b24a3d5ace52764a0f2503d8956e6f8aa7df3111918e137be7"},
 ]
 
 [package.dependencies]
@@ -113,13 +113,13 @@ ujson = ["ujson (>=5.4.0,<6.0.0)"]
 
 [[package]]
 name = "cdk-nag"
-version = "2.27.55"
+version = "2.27.62"
 description = "Check CDK v2 applications for best practices using a combination on available rule packs."
 optional = false
 python-versions = "~=3.7"
 files = [
-    {file = "cdk-nag-2.27.55.tar.gz", hash = "sha256:4d09b39dbc963850a677e26bdf95a301a52233be13778fa3c08e4f39ea405028"},
-    {file = "cdk_nag-2.27.55-py3-none-any.whl", hash = "sha256:1c52c679381bad7651eddc28835cce12bbab77b45c65ff0b04abe5e19640b17b"},
+    {file = "cdk-nag-2.27.62.tar.gz", hash = "sha256:0419ffb567f21f44edf93683603441ff3141889625d7c9acc7f0ed7de7fa87bb"},
+    {file = "cdk_nag-2.27.62-py3-none-any.whl", hash = "sha256:629c317ab70c76b2807a9d5be430f672c6e3cba474b0f3d45677e908b936c5f7"},
 ]
 
 [package.dependencies]
@@ -142,13 +142,13 @@ files = [
 
 [[package]]
 name = "constructs"
-version = "10.2.64"
+version = "10.2.69"
 description = "A programming model for software-defined state"
 optional = false
 python-versions = "~=3.7"
 files = [
-    {file = "constructs-10.2.64-py3-none-any.whl", hash = "sha256:9b042f865323375b4c83683b7ffc9d92cc5bf846b985dbe611d2992bfcf80108"},
-    {file = "constructs-10.2.64.tar.gz", hash = "sha256:e9076dcf1661329ced384b14313b4f86370c0ba3d658cd39b2472833f02974ff"},
+    {file = "constructs-10.2.69-py3-none-any.whl", hash = "sha256:27a60f5ce4faa4d43c91c73f24e1a245c0a1ef67ea1c8a3df9ca6af9adf618df"},
+    {file = "constructs-10.2.69.tar.gz", hash = "sha256:520ddd665cc336df90be06bb1bd49f3a9a7400d886cad8aef7b0155593b4ffa4"},
 ]
 
 [package.dependencies]
@@ -233,13 +233,13 @@ toml = ["tomli"]
 
 [[package]]
 name = "exceptiongroup"
-version = "1.1.1"
+version = "1.1.2"
 description = "Backport of PEP 654 (exception groups)"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "exceptiongroup-1.1.1-py3-none-any.whl", hash = "sha256:232c37c63e4f682982c8b6459f33a8981039e5fb8756b2074364e5055c498c9e"},
-    {file = "exceptiongroup-1.1.1.tar.gz", hash = "sha256:d484c3090ba2889ae2928419117447a14daf3c1231d5e30d0aae34f354f01785"},
+    {file = "exceptiongroup-1.1.2-py3-none-any.whl", hash = "sha256:e346e69d186172ca7cf029c8c1d16235aa0e04035e5750b4b95039e65204328f"},
+    {file = "exceptiongroup-1.1.2.tar.gz", hash = "sha256:12c3e887d6485d16943a309616de20ae5582633e0a2eda17f4e10fd61c1e8af5"},
 ]
 
 [package.extras]
@@ -424,13 +424,13 @@ test = ["mypy", "pytest", "typing-extensions"]
 
 [[package]]
 name = "typing-extensions"
-version = "4.7.0"
+version = "4.7.1"
 description = "Backported and Experimental Type Hints for Python 3.7+"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "typing_extensions-4.7.0-py3-none-any.whl", hash = "sha256:5d8c9dac95c27d20df12fb1d97b9793ab8b2af8a3a525e68c80e21060c161771"},
-    {file = "typing_extensions-4.7.0.tar.gz", hash = "sha256:935ccf31549830cda708b42289d44b6f74084d616a00be651601a4f968e77c82"},
+    {file = "typing_extensions-4.7.1-py3-none-any.whl", hash = "sha256:440d5dd3af93b060174bf433bccd69b0babc3b15b1a8dca43789fd7f61514b36"},
+    {file = "typing_extensions-4.7.1.tar.gz", hash = "sha256:b75ddc264f0ba5615db7ba217daeb99701ad295353c45f9e95963337ceeeffb2"},
 ]
 
 [[package]]
