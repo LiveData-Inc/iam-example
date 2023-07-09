@@ -2,7 +2,7 @@
 import os
 
 import aws_cdk as cdk
-from cdk_nag import AwsSolutionsChecks, HIPAASecurityChecks, NagSuppressions
+from cdk_nag import AwsSolutionsChecks, HIPAASecurityChecks
 
 from iam_example.iam_example_stack import IamExampleStack
 
@@ -14,25 +14,5 @@ stack = IamExampleStack(
 
 cdk.Aspects.of(app).add(AwsSolutionsChecks())
 cdk.Aspects.of(app).add(HIPAASecurityChecks())
-
-# NagSuppressions.add_stack_suppressions(
-#     stack, [
-#         # # uncomment to suppress 'AwsSolutions-IAM4' violation
-#         # dict(
-#         #     id='AwsSolutions-IAM4',
-#         #     reason='ISSUE: CDK uses an AWS Managed Policy'
-#         # ),
-#         # # uncomment to suppress 'AwsSolutions-IAM5' violation
-#         # dict(
-#         #     id='AwsSolutions-IAM5',
-#         #     reason='ISSUE: The IAM entity contains wildcard permissions'
-#         # ),
-#         # # uncomment to suppress 'HIPAA.Security-IAMNoInlinePolicy' violation
-#         # dict(
-#         #     id='HIPAA.Security-IAMNoInlinePolicy',
-#         #     reason='ISSUE: CDK `iam.PolicyStatement()` built an inline policy'
-#         # ),
-#     ]
-# )
 
 app.synth()

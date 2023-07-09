@@ -8,7 +8,7 @@ from cdk_nag import NagSuppressions
 from constructs import Construct
 
 FUNCTION_NAME = 'TestFunction'
-NOT_AN_ISSUE = 'NOT AN ISSUE: suppressing for this demo'
+ADDRESS_LATER = 'Will Address Later: suppressing for this demo'
 
 
 class IamExampleStack(Stack):
@@ -63,33 +63,15 @@ class IamExampleStack(Stack):
             role=lambda_role
         )
 
-        lambda_policy.add_statements(
-            iam.PolicyStatement(
-                sid='IamExampleLambdaLogAccess',
-                effect=iam.Effect.ALLOW,
-                actions=['logs:CreateLogGroup', 'logs:CreateLogStream', 'logs:PutLogEvents'],
-                resources=[handler.log_group.log_group_arn],
-            )
-        )
-
         NagSuppressions.add_resource_suppressions(
             handler, [
                 dict(
                     id='HIPAA.Security-LambdaDLQ',
-                    reason=NOT_AN_ISSUE
+                    reason=ADDRESS_LATER
                 ),
                 dict(
                     id='HIPAA.Security-LambdaInsideVPC',
-                    reason=NOT_AN_ISSUE
+                    reason=ADDRESS_LATER
                 ),
-            ]
-        )
-
-        NagSuppressions.add_resource_suppressions(
-            lambda_policy, [
-                dict(
-                    id='AwsSolutions-IAM5',
-                    reason='Log Group requires wildcard permission for associated Log Streams'
-                )
             ]
         )
